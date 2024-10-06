@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title><link rel="icon" href=
+    "./logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="loginbox">
+            
+            <h2>Login</h2><br>
+            <label for="username">USERNAME: </label>
+            <input type="text" name="username" id="username"><br>
+            <br>
+            <label for="password">PASSWORD: </label>
+            <input type="password" name="password" id="password"><br>
+            <br>
+            <button onclick="myfun()">Login</button>
+        </div>
+    </div>
+
+    <script>
+        function myfun(){
+    let username=document.getElementById('username').value
+    let password=document.getElementById('password').value 
+    if (username=="admin" && password=="admin"){
+        window.location="index.html"
+    }
+    else{
+        alert("Invalid Credientials")
+    }
+    }
+    </script>
+</body>
+</html>
