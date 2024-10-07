@@ -244,6 +244,9 @@
     border-radius: 50%;
     width: 110px;
 }
+.roundimg img:hover{
+    transform: scale(1.2);
+}
 .roundimg h6{
     margin-top: 10px;
     margin-left: 25px;
@@ -492,8 +495,8 @@
     padding: 5px 20px;
     border-radius: 10px;
 }
-.main2 #cc{
-    background-color: white;
+.main2 #cc a{
+    
     color: green;
 }
 .main2{
